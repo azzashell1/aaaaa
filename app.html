@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des restaurants</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+      <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+
+        .search-bar {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px; /* Même largeur que les cartes de restaurant */
+    z-index: 999;
+}
+.search-bar .form-control {
+    width: 68%; /* Rendre l'entrée de recherche aussi large que la barre de recherche */
+}
+
+
+
+
+        .restaurant-card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 10px; /* Réduit la marge en bas à 10px */
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: calc(100% - 20px); /* Largeur égale à 100% moins les marges de 10px */
+            max-width: 400px; /* Largeur maximale du cadre */
+            margin: 0 auto; /* Centre le cadre horizontalement */
+        }
+
+        .restaurant-img {
+            width: calc(100% - 20px); /* Largeur égale à 100% moins les marges de 10px */
+            max-width: 100%; /* Pour empêcher le dépassement de la largeur de la fenêtre */
+            height: auto;
+            margin: 10px; /* Ajout de marges de 10px sur tous les côtés */
+        }
+
+        .restaurant-details {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .restaurant-name {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        /* Media query pour les appareils mobiles */
+        @media (max-width: 600px) {
+            .restaurant-card {
+                width: 100%;
+            }
+        }
+        .restaurant-name a {
+        color: black; /* Couleur du texte */
+        text-decoration: none; /* Pas de soulignement par défaut */
+    }
+
+    /* Style du lien lorsque survolé */
+    .restaurant-name a:hover {
+        color: black; /* Couleur du texte lors du survol */
+        text-decoration: underline; /* Soulignement lors du survol */
+    }
+    </style>
+</head>
+<body>
+    <div class="search-bar">
+        <nav class="navbar navbar-light bg-light">
+            <form class="form-inline">
+                <i class="fas fa-user" style="margin-right: 5px;"></i> <!-- Ajout d'une marge à droite -->
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button type="button" class="btn btn-success">Search</button> <!-- Bouton Success -->
+            </form>
+        </nav>
+    </div>
+    
+    
+    <div style="margin-top: 60px;"> <!-- Pour compenser la hauteur de la barre de recherche -->
+        <div class="restaurant-card restaurant-name">
+            <a href="ciao ciao.html">
+            <img class="restaurant-img" src="ciao ciao.png" alt="ciao ciao">
+            <div class="restaurant-details">
+               
+                    <h2 class="restaurant-name">Ciao Ciao</h2>
+                
+            </div>
+        </a>
+        </div>
+        <!-- Ajoutez d'autres cartes de restaurant ici -->
+    </div>
+    <div style="margin-top: 60px;"> <!-- Pour compenser la hauteur de la barre de recherche -->
+        <div class="restaurant-card">
+            <img class="restaurant-img" src="farm slice.jpg" alt="farm slice.">
+            <div class="restaurant-details">
+                <h2 class="restaurant-name">farm slice.</h2>
+            </div>
+        </div>
+        <!-- Ajoutez d'autres cartes de restaurant ici -->
+    </div>
+    <div style="margin-top: 60px;"> <!-- Pour compenser la hauteur de la barre de recherche -->
+        <div class="restaurant-card">
+            <img class="restaurant-img" src="jwejem hachicha.jpg" alt="jwejem hachicha">
+            <div class="restaurant-details">
+                <h2 class="restaurant-name">jwejem hachicha</h2>
+            </div>
+        </div>
+        <!-- Ajoutez d'autres cartes de restaurant ici -->
+    </div>
+    <div style="margin-top: 60px;"> <!-- Pour compenser la hauteur de la barre de recherche -->
+        <div class="restaurant-card">
+            <img class="restaurant-img" src="kaskrout hamadi.jpg" alt="kaskrout hamadi">
+            <div class="restaurant-details">
+                <h2 class="restaurant-name">kaskrout hamadi</h2>
+            </div>
+        </div>
+        <!-- Ajoutez d'autres cartes de restaurant ici -->
+    </div>
+    <div style="margin-top: 60px;"> <!-- Pour compenser la hauteur de la barre de recherche -->
+        <div class="restaurant-card">
+            <img class="restaurant-img" src="tex mex.jpg" alt="tex mex">
+            <div class="restaurant-details">
+                <h2 class="restaurant-name">tex mex</h2>
+            </div>
+        </div>
+        <!-- Ajoutez d'autres cartes de restaurant ici -->
+    </div>
+    
+</body>
+</html>
